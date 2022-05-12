@@ -17,6 +17,9 @@ namespace Roman2
            Console.WriteLine(ConvertRoman(2022));
         }
         public static string ConvertRoman(int num){
+            if(num>3999){
+                return "Too Big";
+            }
             int divider=1000;
             string temp="";
             for(int i=3;i>=0;i--){
